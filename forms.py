@@ -4,6 +4,6 @@ from wtforms.validators import DataRequired, Length
 
 
 class EmotionForm(FlaskForm):
-    TextAreaField = StringField("Hi, tell me how do you feel ?", validators=[DataRequired()])
+    text_sentiment = TextAreaField ("Hi, tell me how do you feel ?", validators=[DataRequired()])
     
     submit = SubmitField("Get the emotion")
