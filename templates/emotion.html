@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="content-section">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4"></legend>
+                <div class="form-group">
+
+                    {{ form.text_sentiment.label(class="form-control-label") }}
+
+                    {{ form.text_sentiment(class="form-control form-control-lg") }}
+
+
+                </div>
+                </legend>
+            </fieldset>
+            <div class="form-group"> 
+				{{ form.submit(class = "btn btn-outline-info") }}
+			</div>
+
+            <div class="border-top pt-3">
+                <p>The associated emotion is {{emotion}}</p>
+            </div >
+        
+
+
+       </form>
+    </div>
+
+{% endblock content %}

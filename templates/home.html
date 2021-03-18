@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<article class="media content-section">
+  <div class="media-body">
+    <div>
+      <a class="article-title" href="{{url_for('about')}}">Welcome to the official website of EMODETEXT</a>
+    </div>
+    <div class="article-metadata">
+      <a class="mr-2" href="{{url_for('emodetext')}}">Want to try</a>
+      <small class="text-muted">Last Up to date: March 12 </small>
+    </div>
+    <p class="article-content">This app is made by @idrissa</p>
+  </div>
+</article>
+{% endblock content %}
