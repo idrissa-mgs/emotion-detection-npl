@@ -1,11 +1,12 @@
 from flask import render_template,Flask ,url_for, flash, redirect, request
 from forms import EmotionForm
 from emo_detext import predict_emo
+import os
 
 
 app = Flask(__name__)
 
-app.config['SECRET_KEY'] = '5791628bb0b13ce0c676dfde280ba245'
+app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
 
 
 @app.route('/')
