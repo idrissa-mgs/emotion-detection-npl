@@ -6,5 +6,7 @@ The dataset is available in this [kaggle link] (https://www.kaggle.com/praveengo
 )
 
 
-The model is built using tensorflow RNN. For deployment I use Docker and Flask.
+The model is built using tensorflow LSTM and some Dense Layer. The details can be found in the notebook (ipynb file) in the same repo.
+
+For deployment I use Docker and Flask.
 
